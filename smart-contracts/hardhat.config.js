@@ -1,7 +1,7 @@
 require("@nomiclabs/hardhat-waffle");
 require("@nomiclabs/hardhat-etherscan");
 require('hardhat-contract-sizer');
-require('solidity-docgen');
+require('@openzeppelin/hardhat-upgrades');
 const dotenv = require("dotenv");
 dotenv.config({path: __dirname + '/.env'});
 const { ALCHEMY_API_KEY, POLYGON_PRIVATE_KEY, POLYGONSCAN_API_KEY} = process.env;
